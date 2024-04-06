@@ -44,9 +44,20 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.btnVer = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialMultiLineTextBox2 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnVerJuego = new MaterialSkin.Controls.MaterialButton();
             this.tbPrincipal.SuspendLayout();
             this.tbpFirma.SuspendLayout();
+            this.tbpNave.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tbPrincipal
@@ -108,10 +119,19 @@
             // tbpNave
             // 
             this.tbpNave.BackColor = System.Drawing.Color.White;
+            this.tbpNave.Controls.Add(this.btnVerJuego);
+            this.tbpNave.Controls.Add(this.materialLabel7);
+            this.tbpNave.Controls.Add(this.materialLabel8);
+            this.tbpNave.Controls.Add(this.materialLabel9);
+            this.tbpNave.Controls.Add(this.materialMultiLineTextBox2);
+            this.tbpNave.Controls.Add(this.materialLabel10);
+            this.tbpNave.Controls.Add(this.materialLabel11);
+            this.tbpNave.Controls.Add(this.materialLabel12);
+            this.tbpNave.Controls.Add(this.pictureBox2);
             this.tbpNave.ImageKey = "Nave Galaga Recorte.png";
             this.tbpNave.Location = new System.Drawing.Point(4, 39);
             this.tbpNave.Name = "tbpNave";
-            this.tbpNave.Size = new System.Drawing.Size(786, 340);
+            this.tbpNave.Size = new System.Drawing.Size(953, 440);
             this.tbpNave.TabIndex = 2;
             this.tbpNave.Text = "Juego tipo \"Galaga\"";
             // 
@@ -235,6 +255,128 @@
             this.btnVer.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnVer.UseAccentColor = false;
             this.btnVer.UseVisualStyleBackColor = true;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel7.Location = new System.Drawing.Point(556, 95);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(83, 24);
+            this.materialLabel7.TabIndex = 16;
+            this.materialLabel7.Text = "26/03/24";
+            // 
+            // materialLabel8
+            // 
+            this.materialLabel8.AutoSize = true;
+            this.materialLabel8.Depth = 0;
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel8.Location = new System.Drawing.Point(411, 147);
+            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel8.Name = "materialLabel8";
+            this.materialLabel8.Size = new System.Drawing.Size(110, 24);
+            this.materialLabel8.TabIndex = 15;
+            this.materialLabel8.Text = "Descripción:";
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.AutoSize = true;
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel9.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel9.Location = new System.Drawing.Point(411, 95);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(139, 24);
+            this.materialLabel9.TabIndex = 14;
+            this.materialLabel9.Text = "Fecha de inicio:";
+            // 
+            // materialMultiLineTextBox2
+            // 
+            this.materialMultiLineTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialMultiLineTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.materialMultiLineTextBox2.Depth = 0;
+            this.materialMultiLineTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialMultiLineTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialMultiLineTextBox2.Location = new System.Drawing.Point(415, 174);
+            this.materialMultiLineTextBox2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialMultiLineTextBox2.Name = "materialMultiLineTextBox2";
+            this.materialMultiLineTextBox2.Size = new System.Drawing.Size(482, 134);
+            this.materialMultiLineTextBox2.TabIndex = 13;
+            this.materialMultiLineTextBox2.Text = resources.GetString("materialMultiLineTextBox2.Text");
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel10.Location = new System.Drawing.Point(474, 43);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(175, 24);
+            this.materialLabel10.TabIndex = 12;
+            this.materialLabel10.Text = "Juego tipo \"Galaga\"";
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.AutoSize = true;
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel11.Location = new System.Drawing.Point(411, 43);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(57, 24);
+            this.materialLabel11.TabIndex = 11;
+            this.materialLabel11.Text = "Título:";
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.Location = new System.Drawing.Point(55, 43);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(89, 19);
+            this.materialLabel12.TabIndex = 10;
+            this.materialLabel12.Text = "Vista Previa:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(58, 82);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(243, 226);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnVerJuego
+            // 
+            this.btnVerJuego.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnVerJuego.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVerJuego.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnVerJuego.Depth = 0;
+            this.btnVerJuego.HighEmphasis = true;
+            this.btnVerJuego.Icon = null;
+            this.btnVerJuego.Location = new System.Drawing.Point(754, 353);
+            this.btnVerJuego.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnVerJuego.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnVerJuego.Name = "btnVerJuego";
+            this.btnVerJuego.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnVerJuego.Size = new System.Drawing.Size(143, 36);
+            this.btnVerJuego.TabIndex = 18;
+            this.btnVerJuego.Text = "ver formulario";
+            this.btnVerJuego.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnVerJuego.UseAccentColor = false;
+            this.btnVerJuego.UseVisualStyleBackColor = true;
+            this.btnVerJuego.Click += new System.EventHandler(this.btnVerJuego_Click);
             // 
             // frmPrincipal
             // 
@@ -250,7 +392,10 @@
             this.tbPrincipal.ResumeLayout(false);
             this.tbpFirma.ResumeLayout(false);
             this.tbpFirma.PerformLayout();
+            this.tbpNave.ResumeLayout(false);
+            this.tbpNave.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,6 +416,15 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialButton btnVer;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox materialMultiLineTextBox2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private MaterialSkin.Controls.MaterialLabel materialLabel11;
+        private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private MaterialSkin.Controls.MaterialButton btnVerJuego;
     }
 }
 
