@@ -34,10 +34,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(893, 707);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmJuego";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmJuego";
+            this.Load += new System.EventHandler(this.frmJuego_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmJuego_KeyDown);
             this.ResumeLayout(false);
 
         }
