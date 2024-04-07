@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,9 @@ namespace prySosaNahuel
             imgNave = new PictureBox();
             imgNave.SizeMode = PictureBoxSizeMode.StretchImage;
             //imgNave.ImageLocation = "|DataDirectory|\\Resources\\Nave Galaga Recorte.png";
-            imgNave.ImageLocation = "C:\\Users\\nnahu\\OneDrive\\Escritorio\\2do Año Sist\\Lab Prog III\\prySosaNahuel\\Resources\\Nave Galaga Recorte.png";
+            //imgNave.ImageLocation = (@"../../../../../Resources/Nave Galaga Recorte.png");
+            string rutaImagen = Path.Combine(Application.StartupPath, "Imagenes Nave", "Nave Galaga Recorte.png");
+            imgNave.ImageLocation = rutaImagen;
 
         }
 
