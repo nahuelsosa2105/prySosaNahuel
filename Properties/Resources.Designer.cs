@@ -63,6 +63,16 @@ namespace prySosaNahuel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_frmFirma {
+            get {
+                object obj = ResourceManager.GetObject("Captura frmFirma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap firma {
             get {
                 object obj = ResourceManager.GetObject("firma", resourceCulture);
