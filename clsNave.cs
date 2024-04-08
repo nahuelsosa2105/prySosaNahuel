@@ -28,9 +28,8 @@ namespace prySosaNahuel
             imgNave.SizeMode = PictureBoxSizeMode.StretchImage;
             //imgNave.ImageLocation = "|DataDirectory|\\Resources\\Nave Galaga Recorte.png";
             //imgNave.ImageLocation = (@"../../../../../Resources/Nave Galaga Recorte.png");
-            string rutaImagen = Path.Combine(Application.StartupPath, "Imagenes Nave", "Nave Galaga Recorte.png");
-            imgNave.ImageLocation = rutaImagen;
-
+            //string rutaImagen = Path.Combine(Application.StartupPath, "Resources", "Nave Galaga Recorte.png");
+            imgNave.ImageLocation = "https://tienda.factoryarcade.es/2268-thickbox_default/cartel-logo-impresion-3d-nave-galaga.jpg";
         }
 
         public void crearEnemigos()
@@ -39,11 +38,12 @@ namespace prySosaNahuel
             nombre = "Enemy 1";
             daño = 2;
             imgNaveEnemiga = new PictureBox();
-            imgNaveEnemiga.Width = 40;
-            imgNaveEnemiga.Height = 40;
+            imgNaveEnemiga.Width = 60;
+            imgNaveEnemiga.Height = 60;
             imgNaveEnemiga.SizeMode = PictureBoxSizeMode.StretchImage;
             string rutaImagen = Path.Combine(Application.StartupPath, "Imagenes Nave", "naveEnemigaUno.png");
-            imgNaveEnemiga.ImageLocation = rutaImagen;
+            //imgNaveEnemiga.ImageLocation = rutaImagen;
+            imgNaveEnemiga.ImageLocation = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ826SC8q7wjlVYw_p8BErwOD8ewNe2yEPk64l8_819Tw&s";
         }
 
     }

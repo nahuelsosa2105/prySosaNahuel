@@ -16,7 +16,7 @@ namespace prySosaNahuel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmJuego());
+            Application.Run(new frmPrincipal());
         }
     }
 }

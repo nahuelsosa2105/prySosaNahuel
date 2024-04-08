@@ -87,5 +87,11 @@ namespace prySosaNahuel
                 objNavePly.imgNave.Location = new Point(objNavePly.imgNave.Location.X - 10, objNavePly.imgNave.Location.Y);
             }
         }
+
+        private void frmJuego_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmPrincipal volverInicio = new frmPrincipal();
+            volverInicio.Show();
+        }
     }
 }
