@@ -16,6 +16,7 @@ namespace prySosaNahuel
         public string nombre;
         int daño;
         public PictureBox imgNave;
+        public PictureBox imgNaveEnemiga;
 
         //Creamos un procedimiento llamado "crearJugador"
         public void crearJugador() //void viene de vacio
@@ -37,6 +38,12 @@ namespace prySosaNahuel
             vida = 25;
             nombre = "Enemy 1";
             daño = 2;
+            imgNaveEnemiga = new PictureBox();
+            imgNaveEnemiga.Width = 40;
+            imgNaveEnemiga.Height = 40;
+            imgNaveEnemiga.SizeMode = PictureBoxSizeMode.StretchImage;
+            string rutaImagen = Path.Combine(Application.StartupPath, "Imagenes Nave", "naveEnemigaUno.png");
+            imgNaveEnemiga.ImageLocation = rutaImagen;
         }
 
     }
