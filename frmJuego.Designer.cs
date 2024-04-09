@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.tmrMisil = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
+            // 
+            // tmrMisil
+            // 
+            this.tmrMisil.Tick += new System.EventHandler(this.tmrMisil_Tick);
             // 
             // frmJuego
             // 
@@ -49,5 +55,7 @@
         }
 
         #endregion
+
+        public System.Windows.Forms.Timer tmrMisil;
     }
 }

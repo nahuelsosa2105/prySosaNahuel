@@ -16,6 +16,9 @@ namespace prySosaNahuel
 
         clsNave objNavePly; //todavia no esta creado en la memoria, para que se cree en memoria sucede se lo instancia mas abajo en procedimiento "Form Load"
         clsNave objNaveEnemiga;
+        clsNave objMisil;
+
+        Int32 posicionNave;
         public frmJuego()
         {
             InitializeComponent();
@@ -28,6 +31,9 @@ namespace prySosaNahuel
             objNavePly = new clsNave();
 
             objNavePly.crearJugador();
+
+            objMisil = new clsNave();
+            objMisil.Disparar();
 
             objNavePly.imgNave.Location = new Point(400,600 );
             Controls.Add(objNavePly.imgNave);
@@ -78,6 +84,7 @@ namespace prySosaNahuel
             if(e.KeyCode == Keys.D)
             {
                 objNavePly.imgNave.Location = new Point(objNavePly.imgNave.Location.X + 10, objNavePly.imgNave.Location.Y);
+                posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
             }
 
             //Procedimiento para que la nave se mueva a la izquierda
@@ -86,12 +93,39 @@ namespace prySosaNahuel
             {
                 objNavePly.imgNave.Location = new Point(objNavePly.imgNave.Location.X - 10, objNavePly.imgNave.Location.Y);
             }
+
+            //Procedimiento para disparar cada vez que presiono el espacio
+
+            if(e.KeyCode == Keys.Space)
+            {
+                tmrMisil.Start();
+                tmrMisil.Enabled = true;
+                objMisil.imgProyectil.Location = new Point(posicionNave, 600);
+                Controls.Add(objMisil.imgProyectil);
+                
+            }
         }
 
         private void frmJuego_FormClosed(object sender, FormClosedEventArgs e)
         {
             frmPrincipal volverInicio = new frmPrincipal();
             volverInicio.Show();
+        }
+
+        public void tmrMisil_Tick(object sender, EventArgs e)
+        {
+            if(objMisil.imgProyectil.Location.Y <= 0)
+            {
+                tmrMisil.Enabled = false;
+                posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
+                
+            }
+            else
+            {
+                objMisil.imgProyectil.Location = new Point(objMisil.imgProyectil.Location.X, objMisil.imgProyectil.Location.Y - 100);
+            }
+           
+
         }
     }
 }
