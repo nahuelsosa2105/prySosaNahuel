@@ -18,7 +18,8 @@ namespace prySosaNahuel
         clsNave objNaveEnemiga;
         clsNave objMisil;
 
-        Int32 posicionNave;
+        //Int32 posicionNave;
+        Point posicionNave;
         public frmJuego()
         {
             InitializeComponent();
@@ -84,7 +85,8 @@ namespace prySosaNahuel
             if(e.KeyCode == Keys.D)
             {
                 objNavePly.imgNave.Location = new Point(objNavePly.imgNave.Location.X + 10, objNavePly.imgNave.Location.Y);
-                posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
+                //posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
+                posicionNave = objNavePly.imgNave.Location;
             }
 
             //Procedimiento para que la nave se mueva a la izquierda
@@ -100,7 +102,8 @@ namespace prySosaNahuel
             {
                 tmrMisil.Start();
                 tmrMisil.Enabled = true;
-                objMisil.imgProyectil.Location = new Point(posicionNave, 600);
+                // objMisil.imgProyectil.Location = new Point(posicionNave, 600);
+                objMisil.imgProyectil.Location = posicionNave;
                 Controls.Add(objMisil.imgProyectil);
                 
             }
@@ -117,7 +120,8 @@ namespace prySosaNahuel
             if(objMisil.imgProyectil.Location.Y <= 0)
             {
                 tmrMisil.Enabled = false;
-                posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
+                //posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
+                posicionNave = objNavePly.imgNave.Location;
                 
             }
             else
