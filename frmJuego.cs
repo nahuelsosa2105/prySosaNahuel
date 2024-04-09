@@ -37,6 +37,7 @@ namespace prySosaNahuel
             objMisil.Disparar();
 
             objNavePly.imgNave.Location = new Point(400,600 );
+            posicionNave = objNavePly.imgNave.Location;
             Controls.Add(objNavePly.imgNave);
 
             //objNaveEnemiga = new clsNave();
@@ -102,7 +103,7 @@ namespace prySosaNahuel
             {
                 tmrMisil.Start();
                 tmrMisil.Enabled = true;
-                // objMisil.imgProyectil.Location = new Point(posicionNave, 600);
+                //objMisil.imgProyectil.Location = new Point(posicionNave, 600);
                 objMisil.imgProyectil.Location = posicionNave;
                 Controls.Add(objMisil.imgProyectil);
                 
