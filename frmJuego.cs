@@ -17,6 +17,7 @@ namespace prySosaNahuel
         clsNave objNavePly; //todavia no esta creado en la memoria, para que se cree en memoria sucede se lo instancia mas abajo en procedimiento "Form Load"
         clsNave objNaveEnemiga;
         clsNave objMisil;
+        clsNave objMisilEmg;
 
         //Int32 posicionNave;
         Point posicionNave;
@@ -39,6 +40,10 @@ namespace prySosaNahuel
             objNavePly.imgNave.Location = new Point(400,600 );
             posicionNave = objNavePly.imgNave.Location;
             Controls.Add(objNavePly.imgNave);
+
+            objMisilEmg = new clsNave();
+            objMisilEmg.ProyectilEnemigo();
+
 
             //objNaveEnemiga = new clsNave();
             //objNaveEnemiga.crearEnemigos();
@@ -131,6 +136,14 @@ namespace prySosaNahuel
             }
            
 
+        }
+
+        private void tmrMisilEnemigos_Tick(object sender, EventArgs e)
+        {
+            foreach (clsNave enemigo in enemigos)
+            {
+                enemigo.ProyectilEnemigo();
+            }
         }
     }
 }
