@@ -132,7 +132,7 @@ namespace prySosaNahuel
             }
             else
             {
-                objMisil.imgProyectil.Location = new Point(objMisil.imgProyectil.Location.X, objMisil.imgProyectil.Location.Y - 100);
+                objMisil.imgProyectil.Location = new Point(objNavePly.imgNave.Left + objNavePly.imgNave.Width / 2 - objMisil.imgProyectil.Width / 2, objMisil.imgProyectil.Location.Y - 100);
             }
            
 

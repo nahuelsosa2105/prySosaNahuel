@@ -76,7 +76,7 @@ namespace prySosaNahuel
             imgProyectilEnemigo.Width = 20;
             imgProyectilEnemigo .Height = 20;
             imgProyectilEnemigo.BackColor = Color.Red;
-            imgProyectilEnemigo.Location = new Point(imgNaveEnemiga.Location.X + imgNaveEnemiga.Width/2,imgNaveEnemiga.Location.Y+imgNaveEnemiga.Height);
+            //imgProyectilEnemigo.Location = new Point(imgNaveEnemiga.Location.X + imgNaveEnemiga.Width/2,imgNaveEnemiga.Location.Y+imgNaveEnemiga.Height);
 
             Form frm = Application.OpenForms["frmJuego"];
             frm.Controls.Add(imgProyectilEnemigo);
