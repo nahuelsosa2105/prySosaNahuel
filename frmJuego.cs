@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql;
+using MySql.Data.MySqlClient;
 
 namespace prySosaNahuel
 {
@@ -83,6 +85,25 @@ namespace prySosaNahuel
 
                 Controls.Add(objNaveEnemiga.imgNaveEnemiga);
             }
+
+            try
+            {
+                string cadenaConexion = "Server = localhost;"+
+                    "Database = juego_rol;" +
+                    "Uid = root;" +
+                    " Pwd = ;";
+                MySqlConnection Conexion = new MySqlConnection(cadenaConexion);
+                Conexion.Open();
+                MessageBox.Show("Conexiòn exitosa");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+            //Server = localhost;
+            //Database = juegorol;
+            //Uid = root;
+            //Pwd = ;
         }
 
         private void frmJuego_KeyDown(object sender, KeyEventArgs e)
