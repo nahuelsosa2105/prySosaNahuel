@@ -100,10 +100,7 @@ namespace prySosaNahuel
             {
                 MessageBox.Show(error.Message);
             }
-            //Server = localhost;
-            //Database = juegorol;
-            //Uid = root;
-            //Pwd = ;
+            
         }
 
         private void frmJuego_KeyDown(object sender, KeyEventArgs e)
@@ -149,10 +146,12 @@ namespace prySosaNahuel
                 tmrMisil.Enabled = false;
                 //posicionNave = Convert.ToInt32(objNavePly.imgNave.Location.X);
                 posicionNave = objNavePly.imgNave.Location;
+                objMisil.imgProyectil.Dispose();
                 
             }
             else
             {
+                tmrMisil.Enabled = true;
                 objMisil.imgProyectil.Location = new Point(objNavePly.imgNave.Left + objNavePly.imgNave.Width / 2 - objMisil.imgProyectil.Width / 2, objMisil.imgProyectil.Location.Y - 100);
             }
            

@@ -35,6 +35,7 @@
             // 
             // tmrMisil
             // 
+            this.tmrMisil.Interval = 75;
             this.tmrMisil.Tick += new System.EventHandler(this.tmrMisil_Tick);
             // 
             // tmrMisilEnemigos
